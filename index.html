@@ -565,7 +565,6 @@
             if(track) { const originalContent = Array.from(track.children); while (track.firstChild) track.removeChild(track.firstChild); originalContent.forEach(child => track.appendChild(child.cloneNode(true))); originalContent.forEach(child => track.appendChild(child.cloneNode(true))); }
         }
 
-        // --- 8. Terminal Typewriter Effect (Semplificato con tag nativi) ---
         const codeBlock = document.getElementById('code-block');
         // Uso dei tag HTML nativi <b> (grassetto) e <i> (corsivo) per un effetto garantito al 100%
         const codeHTML = `<b>IF</b> ( Value_Created > Tech_Debt + Opex ) {\n    <b>RETURN</b> Proceed_to_Execution;\n} <b>ELSE</b> {\n    <b>ABORT</b>; <i>// Force Redesign Phase</i>\n}`;
